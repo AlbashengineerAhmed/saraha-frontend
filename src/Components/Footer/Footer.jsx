@@ -4,7 +4,7 @@ export default function Footer() {
   return (
     <footer
       className="text-center"
-      style={{ backgroundColor: "rgb(0, 248, 186)", marginTop:"280px" }}
+      style={{ backgroundColor: "rgb(0, 248, 186)", marginTop:"200px" }}
     >
       <p className="fs-5 fst-italic mb-0 mt-1 text-white ">
         © Copyright Saraha. All Rights Reserved
