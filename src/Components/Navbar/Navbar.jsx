@@ -85,7 +85,7 @@ export default function Navbar({loginData , details , logOut}) {
             )}
             {/* {details?<h4 className='m-auto me-2 text-white fst-italic position-relative '> Hello: {details.name.split(' ')[0]}</h4>:''} */}
             {!loginData ? (
-              <>
+              <ul className="d-flex flex-column flex-sm-row">
                 <li className="nav-item">
                   <button className="btn btn-outline-success">
                     <Link
@@ -108,7 +108,7 @@ export default function Navbar({loginData , details , logOut}) {
                     </Link>
                   </button>
                 </li>
-              </>
+              </ul>
             ) : (
               <li className="nav-item">
                 <button className="btn btn-outline-danger">
