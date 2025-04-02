@@ -97,7 +97,7 @@ export default function Navbar({loginData , details , logOut}) {
                     </Link>
                   </button>
                 </li>
-                <li className="nav-item mx-3 mx-sm-0 ">
+                <li className="nav-item ms-3 ms-sm-0 mt-sm-2 ">
                   <button className="btn btn-outline-success">
                     <Link
                       className={`${style.navStyle1}`}
