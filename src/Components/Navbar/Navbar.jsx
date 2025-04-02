@@ -31,7 +31,7 @@ export default function Navbar({loginData , details , logOut}) {
           id="navbarSupportedContent"
         >
           {loginData ? (
-            <ul className="navbar-nav text-start me-5 w-50 d-flex justify-content-evenly">
+            <ul className="navbar-nav text-start ps-5  me-5 w-50 d-flex justify-content-evenly">
               <li className={`nav-item`}>
                 <Link
                   className={`${style.hoverLink} nav-link`}
@@ -85,8 +85,8 @@ export default function Navbar({loginData , details , logOut}) {
             )}
             {/* {details?<h4 className='m-auto me-2 text-white fst-italic position-relative '> Hello: {details.name.split(' ')[0]}</h4>:''} */}
             {!loginData ? (
-              <ul className="list-unstyled text-start d-flex flex-column flex-sm-row">
-                <li className="nav-item">
+              <>
+                <li className="nav-item ps-5">
                   <button className="btn btn-outline-success">
                     <Link
                       className={`${style.navStyle1}`}
@@ -97,7 +97,7 @@ export default function Navbar({loginData , details , logOut}) {
                     </Link>
                   </button>
                 </li>
-                <li className="nav-item ms-3 ms-sm-0 mt-sm-2 ">
+                <li className="nav-item mx-3 ">
                   <button className="btn btn-outline-success">
                     <Link
                       className={`${style.navStyle1}`}
@@ -108,9 +108,9 @@ export default function Navbar({loginData , details , logOut}) {
                     </Link>
                   </button>
                 </li>
-              </ul>
+              </>
             ) : (
-              <li className="nav-item">
+              <li className="nav-item ps-5">
                 <button className="btn btn-outline-danger">
                   <a
                     className={`${style.navStyle2}`}
