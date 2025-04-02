@@ -1,0 +1,23 @@
+.wrapper{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 150px;
+  height: auto;
+}
+.comment{
+  background: url(../../Images/comment-or-not.png) !important;
+}
+.user-image{
+  position: relative;
+}
+.user-image img{
+  width: 170px;
+  height: 150px;
+  position: absolute;
+  bottom: -50px;
+  border-radius: 50%;
+  transform: translate(-50%);
+}

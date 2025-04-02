@@ -1,0 +1,19 @@
+# Node.js modules
+node_modules
+
+# Logs
+logs
+*.log
+
+# Environment files
+.env
+
+# Build output
+/dist
+/build
+
+# Dependency directories (for example, Yarn)
+.yarn/
+
+# Mac system files
+.DS_Store

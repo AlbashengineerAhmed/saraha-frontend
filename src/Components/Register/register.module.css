@@ -1,0 +1,181 @@
+/* General Styling */
+.signup_container {
+	min-height: 100vh;
+	background-color: #d9d8d8;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 20px;
+}
+
+/* Wrapper for Form */
+.signup_form_container {
+	width: 90%;
+	max-width: 900px; /* Prevents it from being too wide on large screens */
+	display: flex;
+	border-radius: 10px;
+	box-shadow: 0px 3px 3px -2px rgb(0 0 0 / 20%),
+		0px 3px 4px 0px rgb(0 0 0 / 14%), 0px 1px 8px 0px rgb(0 0 0 / 12%);
+	overflow: hidden;
+	background-color: white;
+}
+
+/* Left Section */
+.left {
+	width: 40%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	background: url(../../Images/Saraha_logo_1.png) no-repeat center/cover;
+	border-top-left-radius: 10px;
+	border-bottom-left-radius: 10px;
+	padding: 20px;
+}
+
+/* Heading Inside Left */
+.left h1 {
+	color: white;
+	font-size: 28px;
+	text-align: center;
+}
+
+/* Right Section (Form) */
+.right {
+	width: 60%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	padding: 30px;
+}
+
+/* Form Container */
+.form_container {
+	width: 100%;
+	max-width: 500px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+/* Form Heading */
+.form_container h1 {
+	font-size: 32px;
+	margin-bottom: 15px;
+	text-align: center;
+}
+
+/* Input Fields */
+.input {
+	outline: none;
+	border: none;
+	width: 100%;
+	max-width: 450px;
+	padding: 12px;
+	border-radius: 8px;
+	background-color: #edf5f3;
+	margin: 8px 0;
+	font-size: 16px;
+}
+
+/* Error Message */
+.error_msg {
+	width: 100%;
+	max-width: 400px;
+	padding: 10px;
+	font-size: 14px;
+	background-color: #f34646;
+	color: white;
+	border-radius: 5px;
+	text-align: center;
+}
+
+/* Buttons */
+.white_btn,
+.green_btn {
+	border: none;
+	outline: none;
+	padding: 12px 0;
+	border-radius: 20px;
+	width: 180px;
+	font-weight: bold;
+	font-size: 14px;
+	cursor: pointer;
+	transition: 0.3s;
+}
+
+/* Green Button */
+.green_btn {
+	background-color: #3bb19b;
+	color: white;
+	margin: 10px;
+}
+
+/* Button Hover Effects */
+.green_btn:hover {
+	background-color: #2b8a77;
+}
+.white_btn:hover {
+	background-color: #ddd;
+}
+
+/* 📌 Responsive Adjustments */
+@media (max-width: 768px) {
+	/* Stack Left & Right on top of each other */
+	.signup_form_container {
+		flex-direction: column;
+		width: 100%;
+		height: auto;
+	}
+
+	.left {
+		width: 100%;
+		height: 200px;
+		border-radius: 10px 10px 0 0;
+		background-size: cover;
+	}
+
+	.right {
+		width: 100%;
+		padding: 20px;
+	}
+
+	.form_container h1 {
+		font-size: 24px;
+	}
+
+	.input {
+		font-size: 14px;
+		padding: 10px;
+	}
+
+	.green_btn,
+	.white_btn {
+		width: 150px;
+		font-size: 13px;
+		padding: 10px 0;
+	}
+}
+
+@media (max-width: 480px) {
+	.left h1 {
+		font-size: 22px;
+	}
+
+	.form_container h1 {
+		font-size: 20px;
+	}
+
+	.input {
+		font-size: 12px;
+		padding: 8px;
+	}
+
+	.green_btn,
+	.white_btn {
+		width: 140px;
+		font-size: 12px;
+		padding: 8px 0;
+	}
+}
