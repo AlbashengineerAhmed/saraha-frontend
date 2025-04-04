@@ -30,9 +30,10 @@ export default function Register() {
       // alert("Submit")
       try {
         let { data } = await axios.post(
-          "https://saraha-backend-nine.vercel.app/api/v1/auth/signup",
+          "https://saraha-backend-pi.vercel.app/api/v1/auth/signup",
           user
         );
+        // console.log(data);
       if(data.message === 'Done'){
         toast.success("Registration successful!");
         goToLogin();
@@ -42,6 +43,7 @@ export default function Register() {
         }
         setLoading(false);
       }catch (error) {
+        // console.log(error);
         toast.error("An error occurred!");
         setLoading(false);
         setErrorMsg(error.response.data.err)
